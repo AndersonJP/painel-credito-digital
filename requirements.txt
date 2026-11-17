@@ -1,0 +1,2 @@
+# Execução local do pipeline (no Databricks, nada precisa ser instalado)
+duckdb>=1.1

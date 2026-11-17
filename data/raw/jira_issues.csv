@@ -1,0 +1,507 @@
+Issue key,Issue Type,Status,Priority,Created,Resolved,Sprint,Story Points,Epic Link
+CRED-1,Story,Done,High,2025-12-15 18:00,2025-12-23 02:18,CRED Sprint 01,8,Onboarding Digital
+CRED-2,Bug,Concluído,Medium,2026-01-01 12:00,2026-01-12 14:53,CRED Sprint 01,,Sustentação
+CRED-3,Story,Concluído,High,2025-12-30 05:00,2026-01-03 16:47,CRED Sprint 01,3,Onboarding Digital
+CRED-4,Story,Concluído,Medium,2025-12-27 00:00,2026-01-10 11:03,CRED Sprint 01,3,Onboarding Digital
+CRED-5,Story,Concluído,Low,2025-12-17 03:00,2025-12-29 04:09,CRED Sprint 01,8,Onboarding Digital
+CRED-6,Bug,Concluído,High,2025-12-23 05:00,2026-01-05 18:01,CRED Sprint 01,,Sustentação
+CRED-7,Bug,Concluído,Medium,2025-12-17 11:00,2025-12-27 10:51,CRED Sprint 01,,Sustentação
+CRED-8,Story,Concluído,Medium,2025-12-29 17:00,2026-01-05 17:46,CRED Sprint 01,5,Onboarding Digital
+CRED-9,Story,Concluído,Medium,2025-12-24 23:00,2026-01-06 22:53,CRED Sprint 01,3,Onboarding Digital
+CRED-10,Story,Done,High,2026-01-03 01:00,2026-01-13 16:45,CRED Sprint 01,2,Onboarding Digital
+CRED-11,Task,Done,Medium,2025-12-29 01:00,2026-01-09 12:16,CRED Sprint 01,,Onboarding Digital
+CRED-12,Story,Concluído,High,2025-12-26 05:00,2026-01-07 05:58,CRED Sprint 01,3,Onboarding Digital
+CRED-13,Story,Done,Medium,2026-01-03 06:00,2026-01-17 03:50,CRED Sprint 01,8,Onboarding Digital
+CRED-14,Task,Concluído,Medium,2025-12-16 15:00,2025-12-18 15:23,CRED Sprint 01,,Onboarding Digital
+CRED-15,Task,Done,Medium,2025-12-28 19:00,2026-01-03 03:58,CRED Sprint 01,,Onboarding Digital
+CRED-16,Story,Concluído,High,2025-12-29 01:00,2026-01-08 12:08,CRED Sprint 01,8,Onboarding Digital
+CRED-17,Task,Done,Medium,2026-01-02 02:00,2026-01-17 05:12,CRED Sprint 01,,Onboarding Digital
+CRED-18,Task,Concluído,Medium,2025-12-18 10:00,2026-01-01 09:41,CRED Sprint 01,,Onboarding Digital
+CRED-19,Task,Concluído,Low,2025-12-22 08:00,2026-01-04 23:21,CRED Sprint 01,,Onboarding Digital
+CRED-20,Task,Em andamento,Medium,2026-01-03 08:00,,CRED Sprint 01,,Onboarding Digital
+CRED-21,Story,Concluído,Highest,2026-01-03 14:00,2026-01-15 04:01,CRED Sprint 01,3,Onboarding Digital
+CRED-22,Story,Concluído,High,2025-12-24 23:00,2025-12-30 13:00,CRED Sprint 01,5,Onboarding Digital
+CRED-23,Story,Done,Low,2025-12-27 13:00,2026-01-05 01:17,CRED Sprint 01,5,Onboarding Digital
+CRED-24,Story,Done,High,2025-12-19 06:00,2025-12-23 08:06,CRED Sprint 01,8,Onboarding Digital
+CRED-25,Bug,Done,Medium,2026-01-03 16:00,2026-01-06 13:02,CRED Sprint 01,,Sustentação
+CRED-26,Task,Concluído,Medium,2025-12-25 10:00,2026-01-03 04:33,CRED Sprint 01,,Onboarding Digital
+CRED-27,Story,Done,Medium,2026-01-09 11:00,2026-01-15 16:19,CRED Sprint 02,3,Onboarding Digital
+CRED-28,Story,Concluído,Highest,2026-01-10 06:00,2026-01-24 05:12,CRED Sprint 02,5,Onboarding Digital
+CRED-29,Story,In Progress,Medium,2026-01-13 23:00,,CRED Sprint 02,8,Onboarding Digital
+CRED-30,Story,Done,Medium,2026-01-03 15:00,2026-01-18 12:25,CRED Sprint 02,1,Onboarding Digital
+CRED-31,Task,Concluído,High,2026-01-06 02:00,2026-01-18 06:50,CRED Sprint 02,,Onboarding Digital
+CRED-32,Story,Done,Highest,2026-01-03 05:00,2026-01-09 00:50,CRED Sprint 02,2,Onboarding Digital
+CRED-33,Task,To Do,Medium,2026-01-04 03:00,,CRED Sprint 02,,Onboarding Digital
+CRED-34,Story,Concluído,Medium,2026-01-06 18:00,2026-01-20 20:22,CRED Sprint 02,8,Onboarding Digital
+CRED-35,Story,Done,Low,2026-01-09 11:00,2026-01-16 21:22,CRED Sprint 02,2,Onboarding Digital
+CRED-36,Bug,Done,Medium,2025-12-29 17:00,2026-01-13 06:53,CRED Sprint 02,,Sustentação
+CRED-37,Story,Concluído,Low,2026-01-12 04:00,2026-01-16 20:15,CRED Sprint 02,8,Onboarding Digital
+CRED-38,Story,Concluído,High,2026-01-16 18:00,2026-01-27 10:07,CRED Sprint 02,2,Onboarding Digital
+CRED-39,Bug,Done,Medium,2026-01-06 21:00,2026-01-14 19:31,CRED Sprint 02,,Sustentação
+CRED-40,Task,Concluído,High,2026-01-16 03:00,2026-01-22 06:51,CRED Sprint 02,,Onboarding Digital
+CRED-41,Story,Concluído,Medium,2026-01-16 08:00,2026-01-28 23:17,CRED Sprint 02,8,Onboarding Digital
+CRED-42,Story,Done,Medium,2025-12-31 17:00,2026-01-13 15:49,CRED Sprint 02,8,Onboarding Digital
+CRED-43,Story,Concluído,Medium,2026-01-08 12:00,2026-01-17 20:01,CRED Sprint 02,2,Onboarding Digital
+CRED-44,Bug,Done,High,2025-12-31 10:00,2026-01-11 13:57,CRED Sprint 02,,Sustentação
+CRED-45,Task,Done,Low,2026-01-15 05:00,2026-01-31 00:55,CRED Sprint 02,,Onboarding Digital
+CRED-46,Task,Concluído,High,2026-01-08 20:00,2026-01-16 14:56,CRED Sprint 02,,Onboarding Digital
+CRED-47,Story,Concluído,High,2026-01-13 16:00,2026-01-23 00:33,CRED Sprint 02,8,Onboarding Digital
+CRED-48,Task,Concluído,Low,2026-01-07 12:00,2026-01-19 17:59,CRED Sprint 02,,Onboarding Digital
+CRED-49,Story,Done,Medium,2026-01-01 07:00,2026-01-17 01:28,CRED Sprint 02,1,Onboarding Digital
+CRED-50,Story,Done,Medium,2026-01-11 00:00,2026-01-19 12:05,CRED Sprint 02,1,Onboarding Digital
+CRED-51,Story,Done,Low,2026-01-18 09:00,2026-01-31 07:00,CRED Sprint 02,2,Onboarding Digital
+CRED-52,Story,Concluído,High,2026-01-15 19:00,2026-01-30 01:24,CRED Sprint 02,2,Onboarding Digital
+CRED-53,Task,Done,Medium,2026-01-23 14:00,2026-01-27 05:49,CRED Sprint 03,,Onboarding Digital
+CRED-54,Story,Concluído,Medium,2026-01-15 00:00,2026-01-17 03:19,CRED Sprint 03,3,Onboarding Digital
+CRED-55,Story,Concluído,Medium,2026-01-26 20:00,2026-02-09 17:36,CRED Sprint 03,5,Onboarding Digital
+CRED-56,Bug,Done,High,2026-01-31 20:00,2026-02-09 03:58,CRED Sprint 03,,Sustentação
+CRED-57,Story,Concluído,High,2026-01-29 02:00,2026-02-06 22:37,CRED Sprint 03,8,Onboarding Digital
+CRED-58,Task,Done,Medium,2026-01-14 05:00,2026-01-20 23:50,CRED Sprint 03,,Onboarding Digital
+CRED-59,Task,Done,Low,2026-01-29 04:00,2026-02-05 18:51,CRED Sprint 03,,Onboarding Digital
+CRED-60,Bug,Done,Low,2026-01-30 14:00,2026-02-10 11:50,CRED Sprint 03,,Sustentação
+CRED-61,Story,Done,Low,2026-01-20 02:00,2026-02-04 00:12,CRED Sprint 03,1,Onboarding Digital
+CRED-62,Story,Done,Medium,2026-01-22 03:00,2026-02-05 07:47,CRED Sprint 03,8,Onboarding Digital
+CRED-63,Story,Concluído,Medium,2026-01-15 13:00,2026-01-18 17:53,CRED Sprint 03,8,Onboarding Digital
+CRED-64,Story,Concluído,Medium,2026-01-21 16:00,2026-01-28 07:11,CRED Sprint 03,2,Onboarding Digital
+CRED-65,Story,In Progress,Medium,2026-01-29 09:00,,CRED Sprint 03,3,Onboarding Digital
+CRED-66,Bug,To Do,Medium,2026-01-28 16:00,,CRED Sprint 03,,Sustentação
+CRED-67,Bug,Done,Low,2026-01-30 23:00,2026-02-11 12:56,CRED Sprint 03,,Sustentação
+CRED-68,Bug,In Progress,High,2026-01-17 00:00,,CRED Sprint 03,,Sustentação
+CRED-69,Bug,In Progress,Low,2026-01-13 18:00,,CRED Sprint 03,,Sustentação
+CRED-70,Bug,Concluído,Medium,2026-01-30 05:00,2026-02-11 17:55,CRED Sprint 03,,Sustentação
+CRED-71,Bug,To Do,Highest,2026-01-29 02:00,,CRED Sprint 03,,Sustentação
+CRED-72,Story,Concluído,Medium,2026-02-12 22:00,2026-02-19 14:17,CRED Sprint 04,3,Onboarding Digital
+CRED-73,Task,Done,Medium,2026-01-27 09:00,2026-02-04 22:26,CRED Sprint 04,,Onboarding Digital
+CRED-74,Story,Done,Medium,2026-01-31 06:00,2026-02-15 02:32,CRED Sprint 04,2,Onboarding Digital
+CRED-75,Bug,Done,Medium,2026-01-26 20:00,2026-02-07 19:43,CRED Sprint 04,,Sustentação
+CRED-76,Task,Done,Medium,2026-01-27 12:00,2026-02-01 00:56,CRED Sprint 04,,Onboarding Digital
+CRED-77,Story,Concluído,Low,2026-02-03 04:00,2026-02-13 20:01,CRED Sprint 04,5,Onboarding Digital
+CRED-78,Story,Done,Highest,2026-02-09 05:00,2026-02-22 01:33,CRED Sprint 04,2,Onboarding Digital
+CRED-79,Task,Concluído,Medium,2026-02-16 00:00,2026-02-27 10:41,CRED Sprint 04,,Onboarding Digital
+CRED-80,Story,Done,High,2026-02-09 08:00,2026-02-15 23:46,CRED Sprint 04,2,Onboarding Digital
+CRED-81,Story,Done,Medium,2026-02-01 00:00,2026-02-07 20:58,CRED Sprint 04,3,Onboarding Digital
+CRED-82,Bug,Concluído,Medium,2026-01-29 08:00,2026-02-03 16:53,CRED Sprint 04,,Sustentação
+CRED-83,Task,Done,High,2026-01-27 21:00,2026-02-05 03:27,CRED Sprint 04,,Onboarding Digital
+CRED-84,Story,Concluído,Medium,2026-02-14 07:00,2026-02-25 23:12,CRED Sprint 04,5,Onboarding Digital
+CRED-85,Story,Done,High,2026-01-27 20:00,2026-02-07 01:09,CRED Sprint 04,5,Onboarding Digital
+CRED-86,Story,Concluído,Low,2026-01-27 11:00,2026-01-30 21:08,CRED Sprint 04,2,Onboarding Digital
+CRED-87,Task,Concluído,Medium,2026-02-04 08:00,2026-02-18 20:19,CRED Sprint 04,,Onboarding Digital
+CRED-88,Story,Done,Highest,2026-02-11 06:00,2026-02-25 16:08,CRED Sprint 04,5,Onboarding Digital
+CRED-89,Story,Done,Medium,2026-01-27 10:00,2026-01-31 14:09,CRED Sprint 04,2,Onboarding Digital
+CRED-90,Story,Done,Low,2026-02-07 21:00,2026-02-23 19:03,CRED Sprint 04,5,Onboarding Digital
+CRED-91,Story,Concluído,Medium,2026-01-27 04:00,2026-02-10 13:18,CRED Sprint 04,8,Onboarding Digital
+CRED-92,Bug,Concluído,High,2026-01-27 19:00,2026-02-07 01:04,CRED Sprint 04,,Sustentação
+CRED-93,Story,To Do,Medium,2026-02-03 16:00,,CRED Sprint 04,8,Onboarding Digital
+CRED-94,Story,Concluído,Low,2026-02-05 16:00,2026-02-15 15:19,CRED Sprint 04,8,Onboarding Digital
+CRED-95,Story,Concluído,Low,2026-02-09 03:00,2026-02-23 05:49,CRED Sprint 04,3,Onboarding Digital
+CRED-96,Story,Concluído,Medium,2026-02-08 17:00,2026-02-22 03:51,CRED Sprint 04,1,Onboarding Digital
+CRED-97,Task,Done,Medium,2026-02-17 10:00,2026-02-24 04:03,CRED Sprint 05,,Onboarding Digital
+CRED-98,Story,Concluído,Medium,2026-02-24 00:00,2026-03-09 22:04,CRED Sprint 05,1,Onboarding Digital
+CRED-99,Task,Concluído,High,2026-02-20 18:00,2026-03-04 01:10,CRED Sprint 05,,Onboarding Digital
+CRED-100,Story,Done,Medium,2026-02-12 12:00,2026-02-18 09:09,CRED Sprint 05,8,Onboarding Digital
+CRED-101,Story,Done,Medium,2026-02-14 05:00,2026-02-17 00:50,CRED Sprint 05,1,Onboarding Digital
+CRED-102,Story,In Progress,Medium,2026-02-13 02:00,,CRED Sprint 05,5,Onboarding Digital
+CRED-103,Story,Done,Highest,2026-02-12 06:00,2026-02-22 12:38,CRED Sprint 05,8,Onboarding Digital
+CRED-104,Story,Concluído,Low,2026-02-23 15:00,2026-02-25 22:47,CRED Sprint 05,3,Onboarding Digital
+CRED-105,Story,Concluído,Medium,2026-02-09 01:00,2026-02-21 21:23,CRED Sprint 05,1,Onboarding Digital
+CRED-106,Story,Concluído,High,2026-02-14 19:00,2026-02-22 12:10,CRED Sprint 05,5,Onboarding Digital
+CRED-107,Story,Concluído,Medium,2026-02-22 08:00,2026-03-09 02:25,CRED Sprint 05,8,Onboarding Digital
+CRED-108,Task,Done,Highest,2026-02-23 13:00,2026-03-03 20:33,CRED Sprint 05,,Onboarding Digital
+CRED-109,Story,Done,Low,2026-02-10 16:00,2026-02-26 01:25,CRED Sprint 05,3,Onboarding Digital
+CRED-110,Task,Concluído,Medium,2026-02-24 01:00,2026-03-03 00:58,CRED Sprint 05,,Onboarding Digital
+CRED-111,Story,Concluído,Low,2026-02-15 08:00,2026-02-19 14:09,CRED Sprint 05,5,Onboarding Digital
+CRED-112,Story,Concluído,High,2026-02-24 10:00,2026-03-01 01:52,CRED Sprint 05,8,Onboarding Digital
+CRED-113,Bug,To Do,High,2026-02-15 17:00,,CRED Sprint 05,,Sustentação
+CRED-114,Story,Done,High,2026-02-16 04:00,2026-02-20 23:24,CRED Sprint 05,8,Onboarding Digital
+CRED-115,Story,Concluído,Low,2026-02-11 02:00,2026-02-21 05:39,CRED Sprint 05,2,Onboarding Digital
+CRED-116,Story,Done,Medium,2026-02-23 14:00,2026-03-03 02:37,CRED Sprint 05,3,Onboarding Digital
+CRED-117,Task,Concluído,High,2026-02-26 19:00,2026-03-08 23:49,CRED Sprint 05,,Onboarding Digital
+CRED-118,Story,Done,Highest,2026-02-23 19:00,2026-03-01 12:19,CRED Sprint 05,8,Onboarding Digital
+CRED-119,Task,Done,Low,2026-02-18 11:00,2026-02-22 22:48,CRED Sprint 05,,Onboarding Digital
+CRED-120,Story,Done,Medium,2026-02-24 00:00,2026-03-01 11:00,CRED Sprint 06,8,Motor de Crédito
+CRED-121,Story,Concluído,Medium,2026-03-14 12:00,2026-03-20 00:50,CRED Sprint 06,1,Motor de Crédito
+CRED-122,Story,Concluído,Low,2026-03-07 16:00,2026-03-14 02:35,CRED Sprint 06,3,Motor de Crédito
+CRED-123,Story,Concluído,Low,2026-02-28 17:00,2026-03-14 20:01,CRED Sprint 06,8,Motor de Crédito
+CRED-124,Task,Done,Medium,2026-03-08 09:00,2026-03-20 16:25,CRED Sprint 06,,Motor de Crédito
+CRED-125,Story,Concluído,High,2026-03-08 14:00,2026-03-10 16:39,CRED Sprint 06,3,Motor de Crédito
+CRED-126,Story,Done,Medium,2026-03-02 13:00,2026-03-12 19:10,CRED Sprint 06,2,Motor de Crédito
+CRED-127,Story,Concluído,Medium,2026-02-27 16:00,2026-03-02 11:01,CRED Sprint 06,1,Motor de Crédito
+CRED-128,Story,Concluído,Low,2026-02-27 14:00,2026-03-07 01:08,CRED Sprint 06,2,Motor de Crédito
+CRED-129,Bug,Done,Medium,2026-03-02 18:00,2026-03-14 20:57,CRED Sprint 06,,Sustentação
+CRED-130,Story,Done,High,2026-03-15 20:00,2026-03-26 23:17,CRED Sprint 06,3,Motor de Crédito
+CRED-131,Story,Done,Medium,2026-03-15 21:00,2026-03-25 18:18,CRED Sprint 06,3,Motor de Crédito
+CRED-132,Story,To Do,High,2026-03-01 15:00,,CRED Sprint 06,8,Motor de Crédito
+CRED-133,Story,Concluído,Medium,2026-03-06 07:00,2026-03-11 17:53,CRED Sprint 06,3,Motor de Crédito
+CRED-134,Story,In Progress,Medium,2026-03-15 13:00,,CRED Sprint 06,5,Motor de Crédito
+CRED-135,Story,Done,High,2026-03-01 10:00,2026-03-07 23:08,CRED Sprint 06,3,Motor de Crédito
+CRED-136,Story,Concluído,High,2026-03-08 18:00,2026-03-19 04:25,CRED Sprint 06,2,Motor de Crédito
+CRED-137,Story,Concluído,Highest,2026-03-13 09:00,2026-03-25 22:18,CRED Sprint 06,1,Motor de Crédito
+CRED-138,Bug,Done,High,2026-03-01 02:00,2026-03-12 20:03,CRED Sprint 06,,Sustentação
+CRED-139,Bug,Concluído,Medium,2026-03-08 01:00,2026-03-18 23:22,CRED Sprint 06,,Sustentação
+CRED-140,Story,Done,Medium,2026-03-14 21:00,2026-03-19 00:53,CRED Sprint 06,3,Motor de Crédito
+CRED-141,Story,Concluído,High,2026-03-29 02:00,2026-04-09 07:44,CRED Sprint 07,5,Motor de Crédito
+CRED-142,Bug,Done,Medium,2026-03-17 14:00,2026-03-23 16:48,CRED Sprint 07,,Sustentação
+CRED-143,Task,Done,Medium,2026-03-13 21:00,2026-03-24 03:22,CRED Sprint 07,,Motor de Crédito
+CRED-144,Task,Done,High,2026-03-19 14:00,2026-04-04 13:06,CRED Sprint 07,,Motor de Crédito
+CRED-145,Story,Concluído,Medium,2026-03-16 19:00,2026-03-24 16:25,CRED Sprint 07,1,Motor de Crédito
+CRED-146,Story,Done,Medium,2026-03-10 11:00,2026-03-20 14:50,CRED Sprint 07,8,Motor de Crédito
+CRED-147,Story,Done,High,2026-03-17 07:00,2026-03-20 12:50,CRED Sprint 07,1,Motor de Crédito
+CRED-148,Story,In Progress,Low,2026-03-20 08:00,,CRED Sprint 07,3,Motor de Crédito
+CRED-149,Bug,Concluído,Medium,2026-03-15 13:00,2026-03-26 14:08,CRED Sprint 07,,Sustentação
+CRED-150,Task,Done,Low,2026-03-09 08:00,2026-03-19 02:14,CRED Sprint 07,,Motor de Crédito
+CRED-151,Story,Em andamento,High,2026-03-28 11:00,,CRED Sprint 07,1,Motor de Crédito
+CRED-152,Story,Done,Medium,2026-03-19 04:00,2026-03-30 02:31,CRED Sprint 07,3,Motor de Crédito
+CRED-153,Story,Em andamento,High,2026-03-13 09:00,,CRED Sprint 07,2,Motor de Crédito
+CRED-154,Story,Concluído,Low,2026-03-25 17:00,2026-03-31 18:08,CRED Sprint 07,1,Motor de Crédito
+CRED-155,Story,Em andamento,Medium,2026-03-13 10:00,,CRED Sprint 07,2,Motor de Crédito
+CRED-156,Bug,Done,High,2026-03-23 12:00,2026-04-06 02:51,CRED Sprint 07,,Sustentação
+CRED-157,Bug,Concluído,Low,2026-03-23 21:00,2026-04-04 23:54,CRED Sprint 07,,Sustentação
+CRED-158,Bug,Done,Medium,2026-03-22 13:00,2026-03-31 12:02,CRED Sprint 07,,Sustentação
+CRED-159,Story,Em andamento,High,2026-03-11 17:00,,CRED Sprint 07,5,Motor de Crédito
+CRED-160,Story,Concluído,High,2026-04-02 13:00,2026-04-14 08:41,CRED Sprint 08,3,Motor de Crédito
+CRED-161,Story,Done,High,2026-04-07 11:00,2026-04-21 04:21,CRED Sprint 08,2,Motor de Crédito
+CRED-162,Bug,Done,High,2026-04-05 05:00,2026-04-07 13:36,CRED Sprint 08,,Sustentação
+CRED-163,Story,Done,High,2026-04-04 18:00,2026-04-19 12:38,CRED Sprint 08,3,Motor de Crédito
+CRED-164,Bug,Done,Medium,2026-04-03 07:00,2026-04-19 04:23,CRED Sprint 08,,Sustentação
+CRED-165,Story,Concluído,High,2026-04-07 02:00,2026-04-09 04:06,CRED Sprint 08,3,Motor de Crédito
+CRED-166,Bug,Done,High,2026-03-23 02:00,2026-03-31 05:09,CRED Sprint 08,,Sustentação
+CRED-167,Story,Done,Medium,2026-04-10 18:00,2026-04-23 17:24,CRED Sprint 08,3,Motor de Crédito
+CRED-168,Story,Done,High,2026-04-09 05:00,2026-04-12 10:58,CRED Sprint 08,5,Motor de Crédito
+CRED-169,Task,Concluído,Medium,2026-03-23 07:00,2026-04-06 09:22,CRED Sprint 08,,Motor de Crédito
+CRED-170,Story,Done,Medium,2026-04-01 16:00,2026-04-13 06:01,CRED Sprint 08,8,Motor de Crédito
+CRED-171,Story,Concluído,Medium,2026-03-27 09:00,2026-04-04 11:48,CRED Sprint 08,3,Motor de Crédito
+CRED-172,Bug,Concluído,High,2026-03-29 14:00,2026-03-31 15:01,CRED Sprint 08,,Sustentação
+CRED-173,Task,Done,Medium,2026-03-30 16:00,2026-04-10 07:08,CRED Sprint 08,,Motor de Crédito
+CRED-174,Story,Concluído,Medium,2026-04-09 15:00,2026-04-22 03:20,CRED Sprint 08,2,Motor de Crédito
+CRED-175,Task,Done,High,2026-04-12 12:00,2026-04-19 03:39,CRED Sprint 08,,Motor de Crédito
+CRED-176,Task,Concluído,Medium,2026-03-27 20:00,2026-04-12 08:51,CRED Sprint 08,,Motor de Crédito
+CRED-177,Story,Concluído,Low,2026-03-25 21:00,2026-04-08 07:01,CRED Sprint 08,1,Motor de Crédito
+CRED-178,Story,Concluído,High,2026-03-31 15:00,2026-04-09 02:35,CRED Sprint 08,2,Motor de Crédito
+CRED-179,Story,In Progress,Medium,2026-04-05 20:00,,CRED Sprint 08,8,Motor de Crédito
+CRED-180,Task,Concluído,Medium,2026-03-28 19:00,2026-04-01 15:19,CRED Sprint 08,,Motor de Crédito
+CRED-181,Story,Concluído,High,2026-04-14 14:00,2026-04-26 12:41,CRED Sprint 09,5,Motor de Crédito
+CRED-182,Story,Concluído,High,2026-04-10 01:00,2026-04-12 21:37,CRED Sprint 09,1,Motor de Crédito
+CRED-183,Story,Concluído,High,2026-04-16 18:00,2026-04-20 09:48,CRED Sprint 09,2,Motor de Crédito
+CRED-184,Task,Done,Highest,2026-04-18 17:00,2026-04-25 06:42,CRED Sprint 09,,Motor de Crédito
+CRED-185,Story,Concluído,High,2026-04-12 07:00,2026-04-16 15:58,CRED Sprint 09,5,Motor de Crédito
+CRED-186,Bug,Done,Medium,2026-04-18 11:00,2026-04-23 22:35,CRED Sprint 09,,Sustentação
+CRED-187,Task,Concluído,Highest,2026-04-08 07:00,2026-04-18 12:32,CRED Sprint 09,,Motor de Crédito
+CRED-188,Bug,Concluído,Low,2026-04-11 05:00,2026-04-19 08:14,CRED Sprint 09,,Sustentação
+CRED-189,Story,To Do,Medium,2026-04-25 05:00,,CRED Sprint 09,3,Motor de Crédito
+CRED-190,Task,Concluído,High,2026-04-22 19:00,2026-04-30 08:49,CRED Sprint 09,,Motor de Crédito
+CRED-191,Bug,Done,Low,2026-04-09 16:00,2026-04-14 14:45,CRED Sprint 09,,Sustentação
+CRED-192,Story,Done,Medium,2026-04-08 07:00,2026-04-17 15:28,CRED Sprint 09,3,Motor de Crédito
+CRED-193,Story,Em andamento,High,2026-04-24 02:00,,CRED Sprint 09,3,Motor de Crédito
+CRED-194,Story,Concluído,Medium,2026-04-17 01:00,2026-04-19 08:44,CRED Sprint 09,5,Motor de Crédito
+CRED-195,Story,Concluído,Highest,2026-04-24 11:00,2026-05-07 03:55,CRED Sprint 09,8,Motor de Crédito
+CRED-196,Story,Concluído,Medium,2026-04-07 13:00,2026-04-22 08:19,CRED Sprint 09,2,Motor de Crédito
+CRED-197,Story,Done,Highest,2026-04-16 09:00,2026-04-28 16:37,CRED Sprint 09,8,Motor de Crédito
+CRED-198,Bug,Concluído,Low,2026-04-20 11:00,2026-04-24 02:59,CRED Sprint 09,,Sustentação
+CRED-199,Bug,Concluído,Highest,2026-04-19 06:00,2026-04-25 01:22,CRED Sprint 09,,Sustentação
+CRED-200,Bug,Done,Medium,2026-04-18 15:00,2026-04-25 14:04,CRED Sprint 09,,Sustentação
+CRED-201,Story,Done,Medium,2026-04-24 03:00,2026-04-27 10:46,CRED Sprint 09,2,Motor de Crédito
+CRED-202,Story,Concluído,Medium,2026-04-08 07:00,2026-04-12 12:38,CRED Sprint 09,8,Motor de Crédito
+CRED-203,Story,Done,Low,2026-04-10 02:00,2026-04-18 18:38,CRED Sprint 09,5,Motor de Crédito
+CRED-204,Bug,Done,High,2026-04-09 18:00,2026-04-18 07:29,CRED Sprint 09,,Sustentação
+CRED-205,Story,Concluído,Low,2026-04-09 21:00,2026-04-21 05:17,CRED Sprint 09,8,Motor de Crédito
+CRED-206,Story,Concluído,Medium,2026-04-25 07:00,2026-05-08 21:00,CRED Sprint 09,8,Motor de Crédito
+CRED-207,Story,Done,Medium,2026-05-09 20:00,2026-05-22 21:00,CRED Sprint 10,1,Motor de Crédito
+CRED-208,Bug,Concluído,Highest,2026-04-21 16:00,2026-04-25 02:14,CRED Sprint 10,,Sustentação
+CRED-209,Bug,Done,Medium,2026-04-28 13:00,2026-05-09 07:26,CRED Sprint 10,,Sustentação
+CRED-210,Story,Concluído,Medium,2026-05-11 00:00,2026-05-16 18:56,CRED Sprint 10,1,Motor de Crédito
+CRED-211,Story,Done,Low,2026-05-07 00:00,2026-05-20 08:15,CRED Sprint 10,1,Motor de Crédito
+CRED-212,Story,Concluído,High,2026-05-03 09:00,2026-05-11 11:03,CRED Sprint 10,2,Motor de Crédito
+CRED-213,Bug,Concluído,High,2026-04-26 16:00,2026-05-12 07:37,CRED Sprint 10,,Sustentação
+CRED-214,Story,Concluído,Medium,2026-04-22 03:00,2026-04-29 15:17,CRED Sprint 10,8,Motor de Crédito
+CRED-215,Story,Concluído,Medium,2026-04-22 04:00,2026-04-26 11:02,CRED Sprint 10,2,Motor de Crédito
+CRED-216,Bug,Done,Medium,2026-04-22 19:00,2026-04-28 15:07,CRED Sprint 10,,Sustentação
+CRED-217,Bug,Done,Low,2026-04-20 03:00,2026-04-30 06:08,CRED Sprint 10,,Sustentação
+CRED-218,Story,Concluído,High,2026-05-05 17:00,2026-05-14 23:40,CRED Sprint 10,1,Motor de Crédito
+CRED-219,Task,Done,Medium,2026-05-09 03:00,2026-05-13 11:14,CRED Sprint 10,,Motor de Crédito
+CRED-220,Story,Concluído,Medium,2026-04-28 18:00,2026-05-13 18:27,CRED Sprint 10,5,Motor de Crédito
+CRED-221,Story,Done,High,2026-04-26 07:00,2026-05-09 08:54,CRED Sprint 10,2,Motor de Crédito
+CRED-222,Story,Done,Medium,2026-04-22 05:00,2026-04-30 02:15,CRED Sprint 10,3,Motor de Crédito
+CRED-223,Story,Done,High,2026-05-07 05:00,2026-05-20 11:11,CRED Sprint 10,3,Motor de Crédito
+CRED-224,Story,Done,Medium,2026-05-06 03:00,2026-05-13 15:23,CRED Sprint 10,3,Motor de Crédito
+CRED-225,Bug,Concluído,High,2026-05-07 06:00,2026-05-15 18:52,CRED Sprint 10,,Sustentação
+CRED-226,Bug,Done,Medium,2026-05-05 13:00,2026-05-08 07:07,CRED Sprint 10,,Sustentação
+CRED-227,Task,Done,Medium,2026-04-21 20:00,2026-05-06 16:58,CRED Sprint 10,,Motor de Crédito
+CRED-228,Bug,Concluído,High,2026-05-02 02:00,2026-05-13 23:57,CRED Sprint 10,,Sustentação
+CRED-229,Story,Concluído,Medium,2026-05-23 23:00,2026-05-31 05:06,CRED Sprint 11,3,Motor de Crédito
+CRED-230,Task,Concluído,Medium,2026-05-07 09:00,2026-05-15 12:52,CRED Sprint 11,,Motor de Crédito
+CRED-231,Task,Concluído,High,2026-05-21 23:00,2026-06-02 08:33,CRED Sprint 11,,Motor de Crédito
+CRED-232,Task,Done,Highest,2026-05-09 10:00,2026-05-11 23:26,CRED Sprint 11,,Motor de Crédito
+CRED-233,Story,Em andamento,Highest,2026-05-20 11:00,,CRED Sprint 11,5,Motor de Crédito
+CRED-234,Bug,Concluído,Medium,2026-05-19 01:00,2026-06-02 01:19,CRED Sprint 11,,Sustentação
+CRED-235,Story,To Do,Medium,2026-05-18 06:00,,CRED Sprint 11,8,Motor de Crédito
+CRED-236,Story,Concluído,Low,2026-05-07 19:00,2026-05-11 16:21,CRED Sprint 11,1,Motor de Crédito
+CRED-237,Task,Concluído,Medium,2026-05-23 21:00,2026-05-30 17:16,CRED Sprint 11,,Motor de Crédito
+CRED-238,Story,Concluído,High,2026-05-17 06:00,2026-06-01 19:50,CRED Sprint 11,3,Motor de Crédito
+CRED-239,Bug,Concluído,Low,2026-05-13 14:00,2026-05-18 06:09,CRED Sprint 11,,Sustentação
+CRED-240,Story,Concluído,Low,2026-05-23 09:00,2026-05-28 01:30,CRED Sprint 11,3,Motor de Crédito
+CRED-241,Bug,Done,Medium,2026-05-20 08:00,2026-05-28 20:15,CRED Sprint 11,,Sustentação
+CRED-242,Story,Em andamento,Highest,2026-05-11 10:00,,CRED Sprint 11,8,Motor de Crédito
+CRED-243,Task,Concluído,Medium,2026-05-20 07:00,2026-05-29 18:18,CRED Sprint 11,,Motor de Crédito
+CRED-244,Story,Done,Medium,2026-05-13 21:00,2026-05-18 08:37,CRED Sprint 11,8,Motor de Crédito
+CRED-245,Story,To Do,Medium,2026-05-21 04:00,,CRED Sprint 11,1,Motor de Crédito
+CRED-246,Story,Concluído,Low,2026-05-23 09:00,2026-06-06 04:02,CRED Sprint 11,1,Motor de Crédito
+CRED-247,Task,Concluído,High,2026-05-14 21:00,2026-05-24 17:13,CRED Sprint 11,,Motor de Crédito
+CRED-248,Task,Concluído,High,2026-05-10 18:00,2026-05-19 03:00,CRED Sprint 11,,Motor de Crédito
+CRED-249,Task,Concluído,High,2026-05-24 09:00,2026-06-04 13:00,CRED Sprint 11,,Motor de Crédito
+CRED-250,Story,Done,Medium,2026-05-19 23:00,2026-05-29 00:49,CRED Sprint 11,1,Motor de Crédito
+CRED-251,Story,Concluído,High,2026-05-23 02:00,2026-06-02 01:44,CRED Sprint 11,2,Motor de Crédito
+CRED-252,Story,Done,Low,2026-06-01 04:00,2026-06-09 23:25,CRED Sprint 12,2,Motor de Crédito
+CRED-253,Story,Concluído,High,2026-05-24 20:00,2026-06-05 00:18,CRED Sprint 12,2,Motor de Crédito
+CRED-254,Task,Done,Medium,2026-06-02 21:00,2026-06-10 09:21,CRED Sprint 12,,Motor de Crédito
+CRED-255,Bug,Concluído,Low,2026-06-03 04:00,2026-06-13 15:10,CRED Sprint 12,,Sustentação
+CRED-256,Story,Concluído,Medium,2026-06-03 22:00,2026-06-08 23:17,CRED Sprint 12,2,Motor de Crédito
+CRED-257,Task,Concluído,Low,2026-05-26 10:00,2026-05-30 03:25,CRED Sprint 12,,Motor de Crédito
+CRED-258,Story,Done,Medium,2026-05-19 11:00,2026-06-01 17:59,CRED Sprint 12,5,Motor de Crédito
+CRED-259,Task,Done,Medium,2026-06-01 01:00,2026-06-08 07:37,CRED Sprint 12,,Motor de Crédito
+CRED-260,Task,Concluído,Highest,2026-05-30 23:00,2026-06-04 04:06,CRED Sprint 12,,Motor de Crédito
+CRED-261,Story,Done,Medium,2026-05-31 14:00,2026-06-12 16:03,CRED Sprint 12,1,Motor de Crédito
+CRED-262,Bug,Done,High,2026-06-07 10:00,2026-06-17 23:31,CRED Sprint 12,,Sustentação
+CRED-263,Bug,Done,Medium,2026-05-19 10:00,2026-06-03 18:59,CRED Sprint 12,,Sustentação
+CRED-264,Bug,Concluído,Medium,2026-05-18 06:00,2026-05-31 23:03,CRED Sprint 12,,Sustentação
+CRED-265,Task,Concluído,Medium,2026-05-21 14:00,2026-06-01 05:34,CRED Sprint 12,,Motor de Crédito
+CRED-266,Story,Concluído,Medium,2026-05-28 12:00,2026-06-03 15:42,CRED Sprint 12,2,Motor de Crédito
+CRED-267,Bug,Concluído,Medium,2026-06-01 16:00,2026-06-17 05:06,CRED Sprint 12,,Sustentação
+CRED-268,Story,Concluído,High,2026-05-21 20:00,2026-05-27 07:35,CRED Sprint 12,5,Motor de Crédito
+CRED-269,Bug,Concluído,Medium,2026-05-28 21:00,2026-06-07 02:14,CRED Sprint 12,,Sustentação
+CRED-270,Bug,Concluído,High,2026-06-02 20:00,2026-06-18 02:56,CRED Sprint 13,,Sustentação
+CRED-271,Story,Done,Highest,2026-06-13 10:00,2026-06-17 01:00,CRED Sprint 13,1,Antifraude
+CRED-272,Task,Concluído,Medium,2026-06-16 02:00,2026-06-18 18:25,CRED Sprint 13,,Antifraude
+CRED-273,Story,Concluído,Medium,2026-06-13 14:00,2026-06-26 17:53,CRED Sprint 13,2,Antifraude
+CRED-274,Task,Concluído,Highest,2026-06-15 20:00,2026-06-25 19:37,CRED Sprint 13,,Antifraude
+CRED-275,Task,Concluído,Low,2026-06-13 04:00,2026-06-18 06:05,CRED Sprint 13,,Antifraude
+CRED-276,Story,Concluído,Medium,2026-06-07 09:00,2026-06-16 16:05,CRED Sprint 13,8,Antifraude
+CRED-277,Story,Done,High,2026-06-04 08:00,2026-06-11 05:31,CRED Sprint 13,2,Antifraude
+CRED-278,Bug,In Progress,Low,2026-06-19 23:00,,CRED Sprint 13,,Sustentação
+CRED-279,Bug,Done,Medium,2026-06-04 05:00,2026-06-07 00:03,CRED Sprint 13,,Sustentação
+CRED-280,Task,Concluído,High,2026-06-05 07:00,2026-06-19 09:25,CRED Sprint 13,,Antifraude
+CRED-281,Bug,To Do,Medium,2026-06-18 16:00,,CRED Sprint 13,,Sustentação
+CRED-282,Story,Concluído,Medium,2026-06-03 19:00,2026-06-19 03:51,CRED Sprint 13,5,Antifraude
+CRED-283,Task,Done,Medium,2026-06-04 09:00,2026-06-18 13:48,CRED Sprint 13,,Antifraude
+CRED-284,Bug,Done,Medium,2026-06-08 18:00,2026-06-21 13:28,CRED Sprint 13,,Sustentação
+CRED-285,Task,Done,Medium,2026-06-16 10:00,2026-06-30 00:23,CRED Sprint 13,,Antifraude
+CRED-286,Story,Concluído,Medium,2026-06-08 20:00,2026-06-22 07:55,CRED Sprint 13,1,Antifraude
+CRED-287,Bug,Done,Low,2026-06-06 22:00,2026-06-12 01:04,CRED Sprint 13,,Sustentação
+CRED-288,Story,Em andamento,Medium,2026-06-02 04:00,,CRED Sprint 13,2,Antifraude
+CRED-289,Task,Done,Low,2026-06-26 02:00,2026-07-06 00:06,CRED Sprint 14,,Antifraude
+CRED-290,Bug,Done,High,2026-07-03 07:00,2026-07-07 23:55,CRED Sprint 14,,Sustentação
+CRED-291,Story,Done,Medium,2026-07-04 06:00,2026-07-08 08:13,CRED Sprint 14,5,Antifraude
+CRED-292,Story,Done,Medium,2026-07-03 21:00,2026-07-07 13:14,CRED Sprint 14,5,Antifraude
+CRED-293,Bug,Concluído,High,2026-07-01 09:00,2026-07-11 03:54,CRED Sprint 14,,Sustentação
+CRED-294,Story,Done,Medium,2026-06-26 05:00,2026-07-03 05:35,CRED Sprint 14,5,Antifraude
+CRED-295,Story,Concluído,Medium,2026-06-16 05:00,2026-06-25 17:34,CRED Sprint 14,3,Antifraude
+CRED-296,Story,Done,Medium,2026-06-27 23:00,2026-07-06 04:29,CRED Sprint 14,5,Antifraude
+CRED-297,Bug,Done,Low,2026-06-26 03:00,2026-06-29 05:05,CRED Sprint 14,,Sustentação
+CRED-298,Story,Done,Medium,2026-06-21 16:00,2026-06-25 17:23,CRED Sprint 14,3,Antifraude
+CRED-299,Task,Done,Low,2026-07-04 17:00,2026-07-07 20:09,CRED Sprint 14,,Antifraude
+CRED-300,Story,Done,Medium,2026-06-16 13:00,2026-06-22 03:10,CRED Sprint 14,8,Antifraude
+CRED-301,Bug,Done,Low,2026-06-18 14:00,2026-06-22 15:13,CRED Sprint 14,,Sustentação
+CRED-302,Story,Done,Low,2026-06-17 19:00,2026-07-03 05:30,CRED Sprint 14,3,Antifraude
+CRED-303,Story,Concluído,High,2026-06-24 06:00,2026-07-05 12:24,CRED Sprint 14,2,Antifraude
+CRED-304,Bug,Done,Medium,2026-06-21 20:00,2026-07-06 22:12,CRED Sprint 14,,Sustentação
+CRED-305,Story,To Do,Low,2026-06-16 00:00,,CRED Sprint 14,2,Antifraude
+CRED-306,Task,Concluído,High,2026-06-15 05:00,2026-06-20 15:37,CRED Sprint 14,,Antifraude
+CRED-307,Story,Concluído,High,2026-06-28 17:00,2026-07-02 09:50,CRED Sprint 14,8,Antifraude
+CRED-308,Bug,Concluído,High,2026-07-03 05:00,2026-07-06 15:16,CRED Sprint 14,,Sustentação
+CRED-309,Bug,Concluído,Highest,2026-06-29 12:00,2026-07-02 21:55,CRED Sprint 14,,Sustentação
+CRED-310,Story,Concluído,High,2026-06-21 15:00,2026-07-05 01:34,CRED Sprint 14,8,Antifraude
+CRED-311,Task,Done,High,2026-06-22 10:00,2026-06-30 23:18,CRED Sprint 14,,Antifraude
+CRED-312,Task,Done,Highest,2026-07-05 11:00,2026-07-14 07:54,CRED Sprint 14,,Antifraude
+CRED-313,Bug,Done,Medium,2026-07-05 06:00,2026-07-13 09:01,CRED Sprint 14,,Sustentação
+CRED-314,Story,Concluído,Highest,2026-06-30 02:00,2026-07-14 22:32,CRED Sprint 15,1,Antifraude
+CRED-315,Task,Concluído,Medium,2026-07-12 14:00,2026-07-19 09:32,CRED Sprint 15,,Antifraude
+CRED-316,Story,Concluído,Low,2026-07-07 23:00,2026-07-21 03:15,CRED Sprint 15,2,Antifraude
+CRED-317,Task,Done,Highest,2026-07-14 17:00,2026-07-25 19:39,CRED Sprint 15,,Antifraude
+CRED-318,Story,Done,Medium,2026-07-16 12:00,2026-07-24 08:48,CRED Sprint 15,8,Antifraude
+CRED-319,Task,Done,Low,2026-07-17 21:00,2026-07-24 11:39,CRED Sprint 15,,Antifraude
+CRED-320,Task,In Progress,Medium,2026-07-19 17:00,,CRED Sprint 15,,Antifraude
+CRED-321,Story,Concluído,Medium,2026-07-02 11:00,2026-07-18 05:04,CRED Sprint 15,2,Antifraude
+CRED-322,Bug,Concluído,High,2026-07-18 17:00,2026-07-25 08:03,CRED Sprint 15,,Sustentação
+CRED-323,Story,Concluído,Low,2026-07-19 02:00,2026-07-21 04:44,CRED Sprint 15,2,Antifraude
+CRED-324,Bug,Done,Low,2026-07-07 00:00,2026-07-20 19:10,CRED Sprint 15,,Sustentação
+CRED-325,Story,Concluído,Low,2026-07-12 15:00,2026-07-25 04:10,CRED Sprint 15,8,Antifraude
+CRED-326,Bug,Done,Low,2026-07-16 19:00,2026-07-23 15:25,CRED Sprint 15,,Sustentação
+CRED-327,Task,Done,Highest,2026-07-09 15:00,2026-07-13 01:02,CRED Sprint 15,,Antifraude
+CRED-328,Story,Concluído,Medium,2026-07-15 09:00,2026-07-29 08:17,CRED Sprint 15,8,Antifraude
+CRED-329,Story,In Progress,Medium,2026-07-14 22:00,,CRED Sprint 15,2,Antifraude
+CRED-330,Task,Done,High,2026-07-05 13:00,2026-07-18 09:58,CRED Sprint 15,,Antifraude
+CRED-331,Bug,Done,High,2026-07-18 05:00,2026-08-01 09:00,CRED Sprint 15,,Sustentação
+CRED-332,Task,Done,Medium,2026-07-02 20:00,2026-07-05 16:08,CRED Sprint 15,,Antifraude
+CRED-333,Story,Concluído,Medium,2026-06-29 21:00,2026-07-06 11:33,CRED Sprint 15,1,Antifraude
+CRED-334,Story,Concluído,High,2026-07-03 21:00,2026-07-07 01:57,CRED Sprint 15,1,Antifraude
+CRED-335,Story,Concluído,Low,2026-07-02 02:00,2026-07-12 05:08,CRED Sprint 15,1,Antifraude
+CRED-336,Story,Done,Medium,2026-07-04 14:00,2026-07-18 12:51,CRED Sprint 15,8,Antifraude
+CRED-337,Bug,Done,Medium,2026-07-10 21:00,2026-07-22 11:27,CRED Sprint 15,,Sustentação
+CRED-338,Bug,Concluído,Medium,2026-07-04 22:00,2026-07-08 16:49,CRED Sprint 15,,Sustentação
+CRED-339,Story,Concluído,Medium,2026-07-10 03:00,2026-07-21 12:18,CRED Sprint 15,8,Antifraude
+CRED-340,Task,Concluído,High,2026-07-17 18:00,2026-07-20 03:15,CRED Sprint 16,,Antifraude
+CRED-341,Bug,Concluído,Medium,2026-07-20 01:00,2026-08-03 10:02,CRED Sprint 16,,Sustentação
+CRED-342,Task,Concluído,Medium,2026-07-13 09:00,2026-07-19 16:12,CRED Sprint 16,,Antifraude
+CRED-343,Story,To Do,Low,2026-07-25 15:00,,CRED Sprint 16,1,Antifraude
+CRED-344,Task,Concluído,Highest,2026-07-25 08:00,2026-08-06 13:31,CRED Sprint 16,,Antifraude
+CRED-345,Story,Concluído,High,2026-07-14 16:00,2026-07-26 19:36,CRED Sprint 16,3,Antifraude
+CRED-346,Story,Em andamento,High,2026-07-24 07:00,,CRED Sprint 16,2,Antifraude
+CRED-347,Story,Concluído,Medium,2026-07-25 11:00,2026-08-07 05:01,CRED Sprint 16,5,Antifraude
+CRED-348,Bug,Concluído,High,2026-07-21 10:00,2026-08-01 03:44,CRED Sprint 16,,Sustentação
+CRED-349,Story,Concluído,Medium,2026-07-31 03:00,2026-08-03 00:26,CRED Sprint 16,5,Antifraude
+CRED-350,Story,Done,Medium,2026-07-19 17:00,2026-07-23 05:07,CRED Sprint 16,1,Antifraude
+CRED-351,Story,Done,Medium,2026-07-27 15:00,2026-07-30 20:05,CRED Sprint 16,2,Antifraude
+CRED-352,Story,Concluído,Low,2026-08-01 22:00,2026-08-07 23:42,CRED Sprint 16,5,Antifraude
+CRED-353,Story,Concluído,High,2026-07-26 23:00,2026-07-31 22:58,CRED Sprint 16,5,Antifraude
+CRED-354,Bug,Concluído,Highest,2026-07-24 14:00,2026-08-04 09:47,CRED Sprint 16,,Sustentação
+CRED-355,Story,Done,High,2026-07-24 13:00,2026-08-09 00:25,CRED Sprint 16,8,Antifraude
+CRED-356,Story,Em andamento,Medium,2026-07-16 10:00,,CRED Sprint 16,1,Antifraude
+CRED-357,Task,Done,High,2026-07-27 13:00,2026-08-10 05:12,CRED Sprint 16,,Antifraude
+CRED-358,Bug,Done,Low,2026-07-20 05:00,2026-07-23 23:22,CRED Sprint 16,,Sustentação
+CRED-359,Story,Concluído,Low,2026-07-31 00:00,2026-08-13 20:43,CRED Sprint 16,2,Antifraude
+CRED-360,Story,Done,High,2026-07-25 12:00,2026-08-10 10:58,CRED Sprint 16,1,Antifraude
+CRED-361,Task,Done,Medium,2026-07-27 02:00,2026-08-05 22:50,CRED Sprint 16,,Antifraude
+CRED-362,Story,Done,Medium,2026-08-02 17:00,2026-08-06 16:48,CRED Sprint 16,1,Antifraude
+CRED-363,Story,Concluído,Medium,2026-08-02 12:00,2026-08-17 18:51,CRED Sprint 17,3,Antifraude
+CRED-364,Bug,In Progress,Medium,2026-08-15 14:00,,CRED Sprint 17,,Sustentação
+CRED-365,Story,Done,Medium,2026-08-03 14:00,2026-08-17 01:22,CRED Sprint 17,8,Antifraude
+CRED-366,Task,Concluído,High,2026-07-30 05:00,2026-08-10 09:21,CRED Sprint 17,,Antifraude
+CRED-367,Story,Done,Medium,2026-07-27 01:00,2026-07-29 23:06,CRED Sprint 17,3,Antifraude
+CRED-368,Story,Concluído,High,2026-08-11 20:00,2026-08-25 15:23,CRED Sprint 17,8,Antifraude
+CRED-369,Story,Concluído,Medium,2026-08-04 10:00,2026-08-15 19:48,CRED Sprint 17,1,Antifraude
+CRED-370,Story,Concluído,Medium,2026-08-12 21:00,2026-08-24 20:50,CRED Sprint 17,8,Antifraude
+CRED-371,Story,Concluído,Medium,2026-08-10 12:00,2026-08-21 10:02,CRED Sprint 17,8,Antifraude
+CRED-372,Story,Concluído,Medium,2026-08-01 06:00,2026-08-05 01:23,CRED Sprint 17,8,Antifraude
+CRED-373,Story,Concluído,Medium,2026-08-08 14:00,2026-08-14 23:16,CRED Sprint 17,1,Antifraude
+CRED-374,Story,Concluído,Low,2026-08-13 01:00,2026-08-26 07:23,CRED Sprint 17,8,Antifraude
+CRED-375,Story,Concluído,High,2026-07-27 17:00,2026-08-03 11:46,CRED Sprint 17,8,Antifraude
+CRED-376,Story,Concluído,Highest,2026-07-27 02:00,2026-08-06 06:08,CRED Sprint 17,1,Antifraude
+CRED-377,Story,Concluído,High,2026-08-05 16:00,2026-08-12 19:59,CRED Sprint 17,1,Antifraude
+CRED-378,Story,Concluído,High,2026-08-09 19:00,2026-08-13 23:44,CRED Sprint 17,5,Antifraude
+CRED-379,Story,Concluído,Medium,2026-07-30 15:00,2026-08-12 11:47,CRED Sprint 17,8,Antifraude
+CRED-380,Story,Done,Medium,2026-07-31 16:00,2026-08-10 14:32,CRED Sprint 17,1,Antifraude
+CRED-381,Task,Concluído,Medium,2026-07-31 05:00,2026-08-04 09:51,CRED Sprint 17,,Antifraude
+CRED-382,Story,Concluído,Medium,2026-08-30 21:00,2026-09-03 03:40,CRED Sprint 18,2,Antifraude
+CRED-383,Story,Concluído,Highest,2026-08-26 18:00,2026-09-02 19:57,CRED Sprint 18,5,Antifraude
+CRED-384,Story,Concluído,Medium,2026-08-24 02:00,2026-08-29 10:28,CRED Sprint 18,8,Antifraude
+CRED-385,Bug,Concluído,Medium,2026-08-30 07:00,2026-09-12 05:00,CRED Sprint 18,,Sustentação
+CRED-386,Bug,To Do,High,2026-08-24 15:00,,CRED Sprint 18,,Sustentação
+CRED-387,Bug,To Do,Medium,2026-08-18 17:00,,CRED Sprint 18,,Sustentação
+CRED-388,Task,To Do,Low,2026-08-27 20:00,,CRED Sprint 18,,Antifraude
+CRED-389,Story,Em andamento,Low,2026-08-25 17:00,,CRED Sprint 18,1,Antifraude
+CRED-390,Story,Done,Medium,2026-08-30 09:00,2026-09-12 01:04,CRED Sprint 18,8,Antifraude
+CRED-391,Task,Concluído,Low,2026-08-12 00:00,2026-08-14 11:08,CRED Sprint 18,,Antifraude
+CRED-392,Story,Concluído,Medium,2026-08-25 22:00,2026-09-01 02:12,CRED Sprint 18,2,Antifraude
+CRED-393,Story,Concluído,Medium,2026-08-18 23:00,2026-08-26 22:11,CRED Sprint 18,5,Antifraude
+CRED-394,Story,Done,High,2026-08-26 11:00,2026-08-29 15:45,CRED Sprint 18,3,Antifraude
+CRED-395,Story,Done,Medium,2026-08-26 09:00,2026-09-10 15:55,CRED Sprint 18,3,Antifraude
+CRED-396,Bug,Concluído,Medium,2026-08-10 21:00,2026-08-20 13:00,CRED Sprint 18,,Sustentação
+CRED-397,Bug,Done,High,2026-08-15 18:00,2026-08-19 19:16,CRED Sprint 18,,Sustentação
+CRED-398,Story,Concluído,Low,2026-08-10 15:00,2026-08-21 09:25,CRED Sprint 18,8,Antifraude
+CRED-399,Story,Done,Low,2026-08-27 07:00,2026-08-30 12:50,CRED Sprint 18,3,Antifraude
+CRED-400,Story,Done,Medium,2026-08-11 16:00,2026-08-25 16:40,CRED Sprint 18,1,Antifraude
+CRED-401,Bug,Done,Highest,2026-08-13 22:00,2026-08-20 12:23,CRED Sprint 18,,Sustentação
+CRED-402,Story,Concluído,High,2026-08-22 03:00,2026-09-03 01:35,CRED Sprint 18,2,Antifraude
+CRED-403,Story,Done,Low,2026-08-24 11:00,2026-09-08 18:57,CRED Sprint 18,3,Antifraude
+CRED-404,Bug,Concluído,High,2026-08-25 05:00,2026-09-09 04:19,CRED Sprint 18,,Sustentação
+CRED-405,Task,Done,Low,2026-08-10 03:00,2026-08-21 08:01,CRED Sprint 18,,Antifraude
+CRED-406,Story,Concluído,High,2026-08-24 20:00,2026-08-30 03:48,CRED Sprint 18,5,Antifraude
+CRED-407,Bug,Concluído,Medium,2026-08-25 10:00,2026-09-05 09:36,CRED Sprint 19,,Sustentação
+CRED-408,Story,Em andamento,High,2026-09-11 23:00,,CRED Sprint 19,1,Renegociação
+CRED-409,Task,Done,Low,2026-08-31 18:00,2026-09-07 20:53,CRED Sprint 19,,Renegociação
+CRED-410,Bug,Concluído,High,2026-09-13 12:00,2026-09-17 03:00,CRED Sprint 19,,Sustentação
+CRED-411,Task,Done,Medium,2026-09-12 14:00,2026-09-19 02:00,CRED Sprint 19,,Renegociação
+CRED-412,Bug,Concluído,High,2026-08-24 09:00,2026-08-31 23:08,CRED Sprint 19,,Sustentação
+CRED-413,Bug,Concluído,High,2026-09-04 21:00,2026-09-10 09:06,CRED Sprint 19,,Sustentação
+CRED-414,Story,Done,Highest,2026-08-25 19:00,2026-09-07 12:59,CRED Sprint 19,8,Renegociação
+CRED-415,Story,Done,Low,2026-09-05 06:00,2026-09-12 10:58,CRED Sprint 19,3,Renegociação
+CRED-416,Task,Concluído,High,2026-08-28 05:00,2026-09-09 10:43,CRED Sprint 19,,Renegociação
+CRED-417,Bug,Done,High,2026-09-01 20:00,2026-09-06 12:18,CRED Sprint 19,,Sustentação
+CRED-418,Story,Done,High,2026-09-11 15:00,2026-09-24 18:27,CRED Sprint 19,8,Renegociação
+CRED-419,Bug,Concluído,Medium,2026-08-25 09:00,2026-09-07 00:30,CRED Sprint 19,,Sustentação
+CRED-420,Task,Concluído,Medium,2026-09-08 07:00,2026-09-20 23:32,CRED Sprint 19,,Renegociação
+CRED-421,Story,Done,Low,2026-09-10 12:00,2026-09-17 22:33,CRED Sprint 19,3,Renegociação
+CRED-422,Story,Concluído,High,2026-09-07 08:00,2026-09-13 10:40,CRED Sprint 19,5,Renegociação
+CRED-423,Story,Done,Highest,2026-08-28 09:00,2026-09-12 14:56,CRED Sprint 19,1,Renegociação
+CRED-424,Bug,Concluído,Medium,2026-09-08 13:00,2026-09-11 10:35,CRED Sprint 19,,Sustentação
+CRED-425,Bug,Done,Highest,2026-08-25 15:00,2026-09-10 09:50,CRED Sprint 19,,Sustentação
+CRED-426,Task,Concluído,Medium,2026-09-09 00:00,2026-09-17 15:22,CRED Sprint 19,,Renegociação
+CRED-427,Story,Concluído,Medium,2026-08-31 14:00,2026-09-13 17:00,CRED Sprint 19,8,Renegociação
+CRED-428,Story,Concluído,High,2026-09-10 04:00,2026-09-17 06:43,CRED Sprint 19,5,Renegociação
+CRED-429,Story,Concluído,High,2026-08-24 08:00,2026-09-01 10:05,CRED Sprint 19,2,Renegociação
+CRED-430,Story,Em andamento,Medium,2026-08-30 16:00,,CRED Sprint 19,2,Renegociação
+CRED-431,Bug,Done,Highest,2026-09-02 01:00,2026-09-05 15:24,CRED Sprint 19,,Sustentação
+CRED-432,Story,Done,Medium,2026-09-04 17:00,2026-09-12 19:35,CRED Sprint 19,1,Renegociação
+CRED-433,Story,Done,Medium,2026-09-25 11:00,2026-10-09 02:19,CRED Sprint 20,5,Renegociação
+CRED-434,Story,In Progress,High,2026-09-07 03:00,,CRED Sprint 20,3,Renegociação
+CRED-435,Story,Concluído,Medium,2026-09-25 05:00,2026-10-08 22:26,CRED Sprint 20,3,Renegociação
+CRED-436,Bug,Done,Medium,2026-09-09 23:00,2026-09-16 07:03,CRED Sprint 20,,Sustentação
+CRED-437,Story,Done,High,2026-09-23 00:00,2026-10-06 02:50,CRED Sprint 20,1,Renegociação
+CRED-438,Story,Concluído,Medium,2026-09-24 17:00,2026-10-07 11:45,CRED Sprint 20,2,Renegociação
+CRED-439,Story,Concluído,Low,2026-09-22 00:00,2026-10-05 06:45,CRED Sprint 20,3,Renegociação
+CRED-440,Story,Done,Low,2026-09-20 05:00,2026-09-25 06:30,CRED Sprint 20,8,Renegociação
+CRED-441,Bug,Done,Medium,2026-09-10 19:00,2026-09-26 12:41,CRED Sprint 20,,Sustentação
+CRED-442,Story,Concluído,Low,2026-09-16 14:00,2026-09-26 15:13,CRED Sprint 20,1,Renegociação
+CRED-443,Story,Concluído,Highest,2026-09-16 09:00,2026-09-22 10:05,CRED Sprint 20,8,Renegociação
+CRED-444,Story,Done,High,2026-09-10 02:00,2026-09-25 20:49,CRED Sprint 20,2,Renegociação
+CRED-445,Story,To Do,Medium,2026-09-09 23:00,,CRED Sprint 20,2,Renegociação
+CRED-446,Bug,Done,Medium,2026-09-10 01:00,2026-09-23 07:18,CRED Sprint 20,,Sustentação
+CRED-447,Story,Done,Highest,2026-09-25 08:00,2026-09-29 09:08,CRED Sprint 20,2,Renegociação
+CRED-448,Story,Concluído,Low,2026-09-26 08:00,2026-10-09 05:59,CRED Sprint 20,3,Renegociação
+CRED-449,Bug,In Progress,Medium,2026-09-28 00:00,,CRED Sprint 20,,Sustentação
+CRED-450,Task,In Progress,Low,2026-09-18 07:00,,CRED Sprint 20,,Renegociação
+CRED-451,Story,Concluído,Highest,2026-09-07 17:00,2026-09-21 19:34,CRED Sprint 20,1,Renegociação
+CRED-452,Task,Done,Medium,2026-09-09 22:00,2026-09-12 07:41,CRED Sprint 20,,Renegociação
+CRED-453,Bug,Concluído,High,2026-09-15 15:00,2026-09-22 21:56,CRED Sprint 20,,Sustentação
+CRED-454,Task,Concluído,Medium,2026-09-12 14:00,2026-09-21 22:43,CRED Sprint 20,,Renegociação
+CRED-455,Story,Concluído,High,2026-10-10 15:00,2026-10-18 19:31,CRED Sprint 21,8,Renegociação
+CRED-456,Story,Concluído,Highest,2026-10-10 07:00,2026-10-20 04:26,CRED Sprint 21,2,Renegociação
+CRED-457,Story,Done,Medium,2026-10-08 03:00,2026-10-18 03:28,CRED Sprint 21,2,Renegociação
+CRED-458,Story,Done,Highest,2026-10-09 17:00,2026-10-20 07:12,CRED Sprint 21,8,Renegociação
+CRED-459,Story,Done,Medium,2026-10-10 13:00,2026-10-24 00:00,CRED Sprint 21,5,Renegociação
+CRED-460,Story,To Do,Highest,2026-10-02 03:00,,CRED Sprint 21,8,Renegociação
+CRED-461,Story,Done,Low,2026-09-29 07:00,2026-10-14 21:31,CRED Sprint 21,2,Renegociação
+CRED-462,Story,Done,Medium,2026-10-03 15:00,2026-10-10 05:31,CRED Sprint 21,3,Renegociação
+CRED-463,Story,Done,High,2026-10-05 02:00,2026-10-15 22:10,CRED Sprint 21,8,Renegociação
+CRED-464,Task,Done,Medium,2026-09-26 10:00,2026-10-02 09:22,CRED Sprint 21,,Renegociação
+CRED-465,Story,Concluído,High,2026-10-01 06:00,2026-10-10 23:03,CRED Sprint 21,5,Renegociação
+CRED-466,Story,Done,Low,2026-09-24 07:00,2026-09-27 21:56,CRED Sprint 21,3,Renegociação
+CRED-467,Task,Done,Medium,2026-10-08 22:00,2026-10-18 07:48,CRED Sprint 21,,Renegociação
+CRED-468,Story,Done,Medium,2026-10-01 14:00,2026-10-14 14:01,CRED Sprint 21,2,Renegociação
+CRED-469,Bug,Done,Medium,2026-09-30 23:00,2026-10-06 21:18,CRED Sprint 21,,Sustentação
+CRED-470,Story,Concluído,Highest,2026-09-29 02:00,2026-10-12 08:47,CRED Sprint 21,2,Renegociação
+CRED-471,Story,Concluído,High,2026-10-08 05:00,2026-10-23 00:18,CRED Sprint 21,2,Renegociação
+CRED-472,Story,Concluído,High,2026-09-27 11:00,2026-09-30 14:55,CRED Sprint 21,2,Renegociação
+CRED-473,Story,Em andamento,Medium,2026-09-30 07:00,,CRED Sprint 21,1,Renegociação
+CRED-474,Story,Done,Medium,2026-09-28 09:00,2026-10-06 04:33,CRED Sprint 21,2,Renegociação
+CRED-475,Story,Done,High,2026-10-07 06:00,2026-10-13 00:58,CRED Sprint 21,1,Renegociação
+CRED-476,Story,Done,Low,2026-10-22 07:00,2026-11-02 19:49,CRED Sprint 22,1,Renegociação
+CRED-477,Story,Done,Medium,2026-10-13 14:00,2026-10-22 06:14,CRED Sprint 22,8,Renegociação
+CRED-478,Story,Concluído,Medium,2026-10-15 09:00,2026-10-21 02:29,CRED Sprint 22,1,Renegociação
+CRED-479,Task,Concluído,High,2026-10-17 22:00,2026-10-28 04:29,CRED Sprint 22,,Renegociação
+CRED-480,Bug,Concluído,Medium,2026-10-08 03:00,2026-10-21 20:34,CRED Sprint 22,,Sustentação
+CRED-481,Story,Done,Medium,2026-10-20 02:00,2026-10-26 07:47,CRED Sprint 22,5,Renegociação
+CRED-482,Task,Concluído,Low,2026-10-24 17:00,2026-10-31 10:34,CRED Sprint 22,,Renegociação
+CRED-483,Story,Concluído,Medium,2026-10-12 14:00,2026-10-26 03:39,CRED Sprint 22,2,Renegociação
+CRED-484,Story,Done,High,2026-10-10 05:00,2026-10-17 06:27,CRED Sprint 22,1,Renegociação
+CRED-485,Story,Done,Highest,2026-10-11 04:00,2026-10-26 03:54,CRED Sprint 22,8,Renegociação
+CRED-486,Story,Concluído,Medium,2026-10-17 00:00,2026-10-26 15:32,CRED Sprint 22,1,Renegociação
+CRED-487,Task,Done,High,2026-10-08 23:00,2026-10-20 19:36,CRED Sprint 22,,Renegociação
+CRED-488,Task,Done,High,2026-10-14 07:00,2026-10-28 22:25,CRED Sprint 22,,Renegociação
+CRED-489,Bug,Concluído,Medium,2026-10-18 12:00,2026-10-22 18:31,CRED Sprint 22,,Sustentação
+CRED-490,Story,Done,Medium,2026-10-12 05:00,2026-10-21 13:11,CRED Sprint 22,8,Renegociação
+CRED-491,Story,Concluído,Medium,2026-10-06 17:00,2026-10-21 14:47,CRED Sprint 22,8,Renegociação
+CRED-492,Bug,Done,Medium,2026-10-12 21:00,2026-10-23 06:29,CRED Sprint 22,,Sustentação
+CRED-493,Task,Done,Medium,2026-10-16 05:00,2026-10-19 16:36,CRED Sprint 22,,Renegociação
+CRED-494,Task,Done,Highest,2026-10-11 02:00,2026-10-17 10:42,CRED Sprint 22,,Renegociação
+CRED-364,Bug,In Progress,Medium,2026-08-15 14:00,,CRED Sprint 17,,Sustentação
+CRED-145,Story,Concluído,Medium,2026-03-16 19:00,2026-03-24 16:25,CRED Sprint 07,1,Motor de Crédito
+CRED-66,Bug,To Do,Medium,2026-01-28 16:00,,CRED Sprint 03,,Sustentação
+CRED-332,Task,Done,Medium,2026-07-02 20:00,2026-07-05 16:08,CRED Sprint 15,,Antifraude
+CRED-294,Story,Done,Medium,2026-06-26 05:00,2026-07-03 05:35,CRED Sprint 14,5,Antifraude
+CRED-169,Task,Concluído,Medium,2026-03-23 07:00,2026-04-06 09:22,CRED Sprint 08,,Motor de Crédito
+CRED-369,Story,Concluído,Medium,2026-08-04 10:00,2026-08-15 19:48,CRED Sprint 17,1,Antifraude
+CRED-211,Story,Done,Low,2026-05-07 00:00,2026-05-20 08:15,CRED Sprint 10,1,Motor de Crédito
+CRED-305,Story,To Do,Low,2026-06-16 00:00,,CRED Sprint 14,2,Antifraude
+CRED-27,Story,Done,Medium,2026-01-09 11:00,2026-01-15 16:19,CRED Sprint 02,3,Onboarding Digital
+CRED-334,Story,Concluído,High,2026-07-03 21:00,2026-07-07 01:57,CRED Sprint 15,1,Antifraude
+CRED-301,Bug,Done,Low,2026-06-18 14:00,2026-06-22 15:13,CRED Sprint 14,,Sustentação

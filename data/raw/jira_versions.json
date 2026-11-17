@@ -1,0 +1,26 @@
+[
+  {
+    "id": "10010",
+    "name": "v1.4 - Onboarding Digital",
+    "releaseDate": "2026-03-16",
+    "released": true
+  },
+  {
+    "id": "10011",
+    "name": "v2.0 - Motor de Crédito",
+    "releaseDate": "2026-06-15",
+    "released": true
+  },
+  {
+    "id": "10012",
+    "name": "v2.1 - Antifraude",
+    "releaseDate": "2026-09-14",
+    "released": true
+  },
+  {
+    "id": "10013",
+    "name": "v2.2 - Renegociação",
+    "releaseDate": "2026-12-07",
+    "released": false
+  }
+]

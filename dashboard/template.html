@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<!--
+  dashboard/template.html
+  =======================
+  Modelo do dashboard. O script src/pipeline_local.py substitui o marcador de
+  dados abaixo pelo resultado das consultas da pasta sql/dashboard/ e grava o
+  arquivo final em dashboard/index.html (autocontido: abre com 2 cliques, sem
+  servidor e sem internet).
+
+  Estrutura da página:
+    1. Cards com os números do período
+    2. Destaque do principal insight (impacto da release v2.0)
+    3. Tempo de decisão por mês (Digital x Presencial) com as releases marcadas
+    4. Antes x depois de cada release
+    5. Taxa de aprovação por mês
+    6. Visão do time no Jira (entregas e bugs por sprint)
+    7. Tabela de impacto das releases (com grupo de controle) e propostas por região
+    8. Insights acionáveis
+  Os gráficos são SVG puro, desenhados pelas funções JS no fim do arquivo.
+-->
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Painel Crédito Digital · Jira × Negócio</title>
+<style>
+  /* Paleta por PAPEL (role), não por cor solta: troca num lugar só */
+  :root {
+    --fundo: #f4f3f0;
+    --superficie: #fcfcfb;
+    --borda: #e4e2dc;
+    --texto: #0b0b0b;
+    --texto-2: #52514e;
+    --texto-3: #8a8883;
+    --grade: #ebe9e4;
+    --digital: #2a78d6;     /* série 1 */
+    --presencial: #eb6834;  /* série 2 */
+    --entregas: #1baf7a;    /* série 3 */
+    --bugs: #6250d6;        /* série 7 */
+    --antes: #b9b7b0;       /* neutro */
+    --destaque: #0f3d7a;
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--fundo); color: var(--texto);
+         font: 14px/1.45 Inter, "Segoe UI", system-ui, sans-serif; }
+  header { background: var(--destaque); color: #fff; padding: 22px 32px; }
+  header h1 { margin: 0; font-size: 22px; font-weight: 650; letter-spacing: -.01em; }
+  header p { margin: 4px 0 0; opacity: .8; font-size: 13px; }
+  main { max-width: 1240px; margin: 0 auto; padding: 24px 32px 40px; }
+  .grid { display: grid; gap: 16px; }
+  .g4 { grid-template-columns: repeat(4, 1fr); }
+  .g2 { grid-template-columns: 1fr 1fr; }
+  .card { background: var(--superficie); border: 1px solid var(--borda); border-radius: 10px; padding: 18px 20px; }
+  .kpi .rotulo { color: var(--texto-2); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; }
+  .kpi .valor { font-size: 28px; font-weight: 650; margin-top: 6px; font-variant-numeric: tabular-nums; }
+  .kpi .nota { color: var(--texto-3); font-size: 12px; margin-top: 2px; }
+  .hero { margin: 16px 0; display: flex; gap: 28px; align-items: center;
+          border-left: 5px solid var(--digital); }
+  .hero .numero { font-size: 46px; font-weight: 700; color: var(--destaque); white-space: nowrap; }
+  .hero h2 { margin: 0 0 4px; font-size: 17px; }
+  .hero p { margin: 0; color: var(--texto-2); }
+  h3 { margin: 0 0 2px; font-size: 15px; }
+  .sub { color: var(--texto-2); font-size: 12.5px; margin: 0 0 10px; }
+  .legenda { display: flex; gap: 16px; font-size: 12px; color: var(--texto-2); margin-bottom: 4px; }
+  .legenda span::before { content: ""; display: inline-block; width: 10px; height: 10px;
+                          border-radius: 2px; margin-right: 6px; background: var(--c); vertical-align: -1px; }
+  svg { width: 100%; height: auto; display: block; overflow: visible; }
+  svg text { font-family: inherit; }
+  .eixo { fill: var(--texto-3); font-size: 11px; }
+  .rotulo-direto { font-size: 11.5px; font-weight: 600; fill: var(--texto); }
+  .marca-release { fill: var(--texto-2); font-size: 10.5px; }
+  table { width: 100%; border-collapse: collapse; font-size: 12.5px; margin-top: 10px; }
+  th, td { text-align: right; padding: 6px 8px; border-bottom: 1px solid var(--grade); font-variant-numeric: tabular-nums; }
+  th:first-child, td:first-child { text-align: left; }
+  th { color: var(--texto-2); font-weight: 600; }
+  .bom { color: #0b7a3e; font-weight: 600; }
+  .ruim { color: #b42318; font-weight: 600; }
+  .insights ol { margin: 8px 0 0; padding-left: 20px; }
+  .insights li { margin-bottom: 10px; }
+  .insights b { color: var(--destaque); }
+  footer { color: var(--texto-3); font-size: 12px; margin-top: 18px; }
+  #tooltip { position: fixed; pointer-events: none; background: #1d1d1b; color: #fff; padding: 7px 10px;
+             border-radius: 6px; font-size: 12px; line-height: 1.4; opacity: 0; transition: opacity .1s; z-index: 9; }
+  @media (max-width: 900px) { .g4 { grid-template-columns: 1fr 1fr; } .g2 { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<header>
+  <h1>Painel Crédito Digital · Entregas do time (Jira) × Indicadores de negócio</h1>
+  <p>Fontes: sistema core de crédito, cadastro de agências, Jira (issues e releases) · Arquitetura medalhão no Databricks · <span id="gerado"></span></p>
+</header>
+
+<main>
+  <!-- 1. Cards -->
+  <section class="grid g4" id="cards"></section>
+
+  <!-- 2. Insight principal -->
+  <section class="card hero" id="hero"></section>
+
+  <!-- 3 e 4 -->
+  <section class="grid g2">
+    <div class="card">
+      <h3>Tempo médio até a decisão de crédito (horas)</h3>
+      <p class="sub">Por mês e canal. Linhas tracejadas = releases do Jira.</p>
+      <div class="legenda"><span style="--c:var(--digital)">Digital (App + Internet Banking)</span><span style="--c:var(--presencial)">Presencial (Agência + Correspondente)</span></div>
+      <div id="graf-tempo"></div>
+    </div>
+    <div class="card">
+      <h3>Antes × depois de cada release · canal Digital</h3>
+      <p class="sub">Tempo médio de decisão 60 dias antes e 60 dias depois da data da release.</p>
+      <div class="legenda"><span style="--c:var(--antes)">60 dias antes</span><span style="--c:var(--digital)">60 dias depois</span></div>
+      <div id="graf-release"></div>
+    </div>
+  </section>
+
+  <!-- 5 e 6 -->
+  <section class="grid g2" style="margin-top:16px">
+    <div class="card">
+      <h3>Taxa de aprovação (%)</h3>
+      <p class="sub">Aprovadas ÷ decididas, por mês e canal.</p>
+      <div class="legenda"><span style="--c:var(--digital)">Digital</span><span style="--c:var(--presencial)">Presencial</span></div>
+      <div id="graf-aprov"></div>
+    </div>
+    <div class="card">
+      <h3>Squad Crédito Digital no Jira · itens por sprint</h3>
+      <p class="sub">Histórias/tarefas e bugs de cada sprint. Faixa = sprints em torno da v2.0.</p>
+      <div class="legenda"><span style="--c:var(--entregas)">Histórias e tarefas</span><span style="--c:var(--bugs)">Bugs</span></div>
+      <div id="graf-jira"></div>
+    </div>
+  </section>
+
+  <!-- 7. Tabela das releases (Digital = afetado, Presencial = grupo de controle) e região -->
+  <section class="grid g2" style="margin-top:16px">
+    <div class="card">
+      <h3>Impacto de cada release · Digital × Presencial (controle)</h3>
+      <p class="sub">Se só o Digital muda, o efeito vem da entrega e não da sazonalidade.</p>
+      <table id="tab-release"></table>
+    </div>
+    <div class="card">
+      <h3>Propostas por região</h3>
+      <p class="sub">Propostas cruzadas com o cadastro de agências.</p>
+      <div id="graf-regiao"></div>
+    </div>
+  </section>
+
+  <!-- 8. Insights -->
+  <section class="card insights" style="margin-top:16px">
+    <h3>Insights acionáveis</h3>
+    <ol id="insights"></ol>
+  </section>
+
+  <footer>Dados 100% fictícios, gerados para fins de demonstração · Tabelas de origem: gold.kpi_credito_mensal, gold.impacto_releases, gold.fluxo_jira_sprint, gold.kpi_regiao</footer>
+</main>
+<div id="tooltip"></div>
+
+<script>
+// ===========================================================================
+// DADOS: preenchidos automaticamente pelo pipeline (não editar à mão)
+// ===========================================================================
+const D = /*__DADOS__*/{};
+
+// ---------- utilitários de formatação (padrão brasileiro) ----------
+const fmtInt = v => Math.round(v).toLocaleString("pt-BR");
+const fmt1 = v => v.toLocaleString("pt-BR", { minimumFractionDigits: 1, maximumFractionDigits: 1 });
+const sinal = v => (v > 0 ? "+" : "") + fmt1(v);
+const fmtMi = v => "R$ " + (v / 1e6).toLocaleString("pt-BR", { maximumFractionDigits: 1 }) + " mi";
+const MESES = ["jan","fev","mar","abr","mai","jun","jul","ago","set","out","nov","dez"];
+const nomeMes = iso => MESES[+iso.slice(5, 7) - 1];
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const NS = "http://www.w3.org/2000/svg";
+
+function el(tag, attrs = {}, pai) {           // cria elemento SVG
+  const e = document.createElementNS(NS, tag);
+  for (const [k, v] of Object.entries(attrs)) e.setAttribute(k, v);
+  if (pai) pai.appendChild(e);
+  return e;
+}
+const tip = document.getElementById("tooltip");
+function mostrarTip(ev, html) { tip.innerHTML = html; tip.style.opacity = 1;
+  tip.style.left = (ev.clientX + 14) + "px"; tip.style.top = (ev.clientY - 10) + "px"; }
+function esconderTip() { tip.style.opacity = 0; }
+
+// ===========================================================================
+// 1. Cards
+// ===========================================================================
+const c = D.cards_resumo[0];
+document.getElementById("gerado").textContent = "Atualizado em " + D.gerado_em;
+const imp = D.impacto_releases.filter(r => r.canal_grupo === "Digital" && r.versao.startsWith("v2.0"))[0];
+const impP = D.impacto_releases.filter(r => r.canal_grupo === "Presencial" && r.versao.startsWith("v2.0"))[0];
+document.getElementById("cards").innerHTML = [
+  ["Propostas de crédito", fmtInt(c.total_propostas), "jan a out/2026"],
+  ["Valor aprovado", fmtMi(c.valor_aprovado), "soma das propostas aprovadas"],
+  ["Taxa de aprovação", fmt1(c.taxa_aprovacao_pct) + "%", "aprovadas ÷ decididas"],
+  ["Tempo médio de decisão", fmt1(c.tempo_medio_decisao_h) + " h", "média ponderada, todos os canais"],
+].map(([r, v, n]) => `<div class="card kpi"><div class="rotulo">${r}</div><div class="valor">${v}</div><div class="nota">${n}</div></div>`).join("");
+
+// ===========================================================================
+// 2. Insight principal
+// ===========================================================================
+document.getElementById("hero").innerHTML = `
+  <div class="numero">${fmt1(imp.variacao_tempo_pct)}%</div>
+  <div><h2>A release ${imp.versao} reduziu o tempo de decisão do canal Digital de ${fmt1(imp.tempo_antes_h)} h para ${fmt1(imp.tempo_depois_h)} h</h2>
+  <p>No mesmo período o Presencial, que não recebeu o motor novo, variou ${sinal(impP.variacao_tempo_pct)}% (grupo de controle).
+  A aprovação no Digital subiu ${fmt1(imp.variacao_aprov_pp)} p.p. Isso liga a entrega do time a um resultado de negócio.</p></div>`;
+
+// ===========================================================================
+// Gráfico de linhas genérico (1 eixo, várias séries, releases marcadas)
+// ===========================================================================
+function graficoLinhas(alvo, linhas, campo, series, sufixo, yMax) {
+  const W = 560, H = 250, m = { t: 22, r: 70, b: 28, l: 38 };
+  const meses = [...new Set(linhas.map(l => l.mes_ref))].sort();
+  const x = i => m.l + i * (W - m.l - m.r) / (meses.length - 1);
+  const y = v => H - m.b - v / yMax * (H - m.t - m.b);
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}` });
+  // grade horizontal recessiva
+  for (let k = 0; k <= 4; k++) {
+    const v = yMax * k / 4;
+    el("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: css("--grade") }, svg);
+    el("text", { x: m.l - 6, y: y(v) + 4, "text-anchor": "end", class: "eixo" }, svg).textContent = fmtInt(v);
+  }
+  meses.forEach((mm, i) => el("text", { x: x(i), y: H - 8, "text-anchor": "middle", class: "eixo" }, svg).textContent = nomeMes(mm));
+  // releases do Jira como linhas verticais tracejadas
+  D.impacto_releases.filter(r => r.canal_grupo === "Digital").forEach(r => {
+    const d = new Date(r.data_release), pos = (d.getMonth() + (d.getDate() - 1) / 30);
+    const xr = x(pos);
+    el("line", { x1: xr, x2: xr, y1: m.t - 6, y2: H - m.b, stroke: css("--texto-3"), "stroke-dasharray": "3 3" }, svg);
+    el("text", { x: xr + 3, y: m.t - 9, class: "marca-release" }, svg).textContent = r.versao.split(" - ")[0];
+  });
+  // séries
+  series.forEach(([nome, cor]) => {
+    const pts = meses.map((mm, i) => [x(i), y(linhas.find(l => l.mes_ref === mm && l.canal_grupo === nome)[campo])]);
+    el("path", { d: "M" + pts.map(p => p.join(",")).join("L"), fill: "none", stroke: css(cor), "stroke-width": 2 }, svg);
+    pts.forEach(p => el("circle", { cx: p[0], cy: p[1], r: 3.5, fill: css(cor), stroke: css("--superficie"), "stroke-width": 2 }, svg));
+    const ult = linhas.filter(l => l.canal_grupo === nome).at(-1)[campo];   // rótulo direto só no último ponto
+    el("text", { x: pts.at(-1)[0] + 8, y: pts.at(-1)[1] + 4, class: "rotulo-direto" }, svg).textContent = fmt1(ult) + sufixo;
+  });
+  // camada de hover: crosshair + tooltip com os 2 canais
+  const cruz = el("line", { y1: m.t, y2: H - m.b, stroke: css("--texto-3"), opacity: 0 }, svg);
+  meses.forEach((mm, i) => {
+    const faixa = el("rect", { x: x(i) - (W - m.l - m.r) / (meses.length - 1) / 2, y: m.t, width: (W - m.l - m.r) / (meses.length - 1), height: H - m.t - m.b, fill: "transparent" }, svg);
+    faixa.addEventListener("mousemove", ev => {
+      cruz.setAttribute("x1", x(i)); cruz.setAttribute("x2", x(i)); cruz.setAttribute("opacity", .6);
+      mostrarTip(ev, `<b>${nomeMes(mm)}/2026</b><br>` + series.map(([n]) => {
+        const l = linhas.find(r => r.mes_ref === mm && r.canal_grupo === n);
+        return `${n}: ${fmt1(l[campo])}${sufixo} · ${fmtInt(l.qtd_propostas)} propostas`; }).join("<br>"));
+    });
+    faixa.addEventListener("mouseleave", () => { cruz.setAttribute("opacity", 0); esconderTip(); });
+  });
+  document.getElementById(alvo).appendChild(svg);
+}
+const SERIES = [["Digital", "--digital"], ["Presencial", "--presencial"]];
+graficoLinhas("graf-tempo", D.tendencia_mensal, "tempo_medio_decisao_h", SERIES, " h", 40);
+graficoLinhas("graf-aprov", D.tendencia_mensal, "taxa_aprovacao_pct", SERIES, "%", 80);
+
+// ===========================================================================
+// 4. Antes x depois (barras agrupadas) + tabela com o grupo de controle
+// ===========================================================================
+(function () {
+  const dig = D.impacto_releases.filter(r => r.canal_grupo === "Digital");
+  const W = 560, H = 190, m = { t: 14, r: 10, b: 30, l: 38 }, yMax = 40;
+  const y = v => H - m.b - v / yMax * (H - m.t - m.b);
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}` });
+  for (let k = 0; k <= 4; k++) {
+    el("line", { x1: m.l, x2: W - m.r, y1: y(k * 10), y2: y(k * 10), stroke: css("--grade") }, svg);
+    el("text", { x: m.l - 6, y: y(k * 10) + 4, "text-anchor": "end", class: "eixo" }, svg).textContent = k * 10;
+  }
+  const larguraGrupo = (W - m.l - m.r) / dig.length, bw = 44;
+  dig.forEach((r, i) => {
+    const cx = m.l + larguraGrupo * (i + .5);
+    [["tempo_antes_h", "--antes", -bw - 1], ["tempo_depois_h", "--digital", 1]].forEach(([campo, cor, dx]) => {
+      const v = r[campo], h = H - m.b - y(v);
+      // barra com topo arredondado (4px) ancorada na base
+      el("path", { d: `M${cx + dx},${H - m.b}v${-h + 4}q0,-4 4,-4h${bw - 8}q4,0 4,4v${h - 4}z`, fill: css(cor) }, svg)
+        .addEventListener("mousemove", ev => mostrarTip(ev, `<b>${r.versao}</b><br>${campo.includes("antes") ? "60 dias antes" : "60 dias depois"}: ${fmt1(v)} h`));
+      svg.lastChild.addEventListener("mouseleave", esconderTip);
+      el("text", { x: cx + dx + bw / 2, y: y(v) - 5, "text-anchor": "middle", class: "rotulo-direto" }, svg).textContent = fmt1(v);
+    });
+    el("text", { x: cx, y: H - 10, "text-anchor": "middle", class: "eixo" }, svg).textContent = r.versao;
+  });
+  document.getElementById("graf-release").appendChild(svg);
+
+  const cls = (v, menorMelhor) => (menorMelhor ? v < -5 : v > 2) ? "bom" : (menorMelhor ? v > 5 : v < -2) ? "ruim" : "";
+  document.getElementById("tab-release").innerHTML =
+    "<tr><th>Release</th><th>Canal</th><th>Tempo antes</th><th>Tempo depois</th><th>Variação</th><th>Aprovação (p.p.)</th></tr>" +
+    D.impacto_releases.map(r => `<tr><td>${r.versao.split(" - ")[0]}</td><td>${r.canal_grupo}</td><td>${fmt1(r.tempo_antes_h)} h</td>
+      <td>${fmt1(r.tempo_depois_h)} h</td><td class="${cls(r.variacao_tempo_pct, true)}">${sinal(r.variacao_tempo_pct)}%</td>
+      <td class="${cls(r.variacao_aprov_pp, false)}">${sinal(r.variacao_aprov_pp)}</td></tr>`).join("");
+})();
+
+// ===========================================================================
+// 6. Jira: barras empilhadas por sprint (histórias/tarefas + bugs)
+// ===========================================================================
+(function () {
+  const s = D.fluxo_sprint, W = 560, H = 250, m = { t: 14, r: 10, b: 28, l: 30 }, yMax = 30;
+  const y = v => H - m.b - v / yMax * (H - m.t - m.b);
+  const passo = (W - m.l - m.r) / s.length, bw = passo - 6;
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}` });
+  // faixa de destaque: sprints 9 a 14 (em torno da release v2.0)
+  el("rect", { x: m.l + passo * 8, y: m.t, width: passo * 6, height: H - m.t - m.b, fill: css("--bugs"), opacity: .07 }, svg);
+  for (let k = 0; k <= 3; k++) {
+    el("line", { x1: m.l, x2: W - m.r, y1: y(k * 10), y2: y(k * 10), stroke: css("--grade") }, svg);
+    el("text", { x: m.l - 6, y: y(k * 10) + 4, "text-anchor": "end", class: "eixo" }, svg).textContent = k * 10;
+  }
+  s.forEach((r, i) => {
+    const x0 = m.l + passo * i + 3, outros = r.itens_concluidos - Math.min(r.bugs, r.itens_concluidos);
+    const bugs = r.itens_concluidos - outros;
+    const hO = H - m.b - y(outros), hB = H - m.b - y(bugs);
+    el("rect", { x: x0, y: y(outros), width: bw, height: hO, fill: css("--entregas") }, svg);
+    // segmento de cima com 2px de respiro e topo arredondado
+    el("path", { d: `M${x0},${y(outros) - 2}v${-hB + 4}q0,-4 4,-4h${bw - 8}q4,0 4,4v${hB - 4}z`, fill: css("--bugs") }, svg);
+    if (i % 3 === 0 || i === s.length - 1)
+      el("text", { x: x0 + bw / 2, y: H - 10, "text-anchor": "middle", class: "eixo" }, svg).textContent = "S" + r.sprint_num;
+    const alvo = el("rect", { x: x0 - 3, y: m.t, width: passo, height: H - m.t - m.b, fill: "transparent" }, svg);
+    alvo.addEventListener("mousemove", ev => mostrarTip(ev, `<b>${r.sprint}</b><br>Itens concluídos: ${r.itens_concluidos}<br>Bugs: ${r.bugs} (${fmt1(r.pct_bugs)}% do planejado)<br>Story points: ${r.story_points_entregues}<br>Lead time médio: ${fmt1(r.lead_time_medio_dias)} dias`));
+    alvo.addEventListener("mouseleave", esconderTip);
+  });
+  el("text", { x: m.l + passo * 11, y: m.t + 12, "text-anchor": "middle", class: "marca-release" }, svg).textContent = "em torno da v2.0";
+  document.getElementById("graf-jira").appendChild(svg);
+})();
+
+// ===========================================================================
+// 7. Região: barras horizontais
+// ===========================================================================
+(function () {
+  const r = D.regiao, W = 560, H = 40 + r.length * 38, m = { l: 100, r: 120 };
+  const max = Math.max(...r.map(x => x.qtd_propostas));
+  const svg = el("svg", { viewBox: `0 0 ${W} ${H}` });
+  r.forEach((x, i) => {
+    const yy = 10 + i * 38, w = x.qtd_propostas / max * (W - m.l - m.r);
+    el("text", { x: m.l - 10, y: yy + 17, "text-anchor": "end", class: "eixo", style: "font-size:12px;fill:" + css("--texto-2") }, svg).textContent = x.regiao;
+    el("path", { d: `M${m.l},${yy}h${w - 4}q4,0 4,4v18q0,4 -4,4h${-w + 4}z`, fill: css("--digital") }, svg)
+      .addEventListener("mousemove", ev => mostrarTip(ev, `<b>${x.regiao}</b><br>${fmtInt(x.qtd_propostas)} propostas<br>Aprovado: ${fmtMi(x.valor_aprovado)}`));
+    svg.lastChild.addEventListener("mouseleave", esconderTip);
+    el("text", { x: m.l + w + 8, y: yy + 17, class: "rotulo-direto" }, svg).textContent = fmtInt(x.qtd_propostas) + " · " + fmtMi(x.valor_aprovado);
+  });
+  document.getElementById("graf-regiao").appendChild(svg);
+})();
+
+// ===========================================================================
+// 8. Insights acionáveis (textos montados a partir dos dados)
+// ===========================================================================
+const presRecente = D.tendencia_mensal.filter(l => l.canal_grupo === "Presencial").slice(-3);
+const mediaPres = presRecente.reduce((a, l) => a + l.tempo_medio_decisao_h, 0) / 3;
+const volPres = presRecente.reduce((a, l) => a + l.qtd_propostas, 0) / 3;
+const v21 = D.impacto_releases.filter(r => r.canal_grupo === "Digital" && r.versao.startsWith("v2.1"))[0];
+document.getElementById("insights").innerHTML = `
+  <li><b>Levar o motor de crédito v2 para as agências.</b> O Presencial ainda leva ${fmt1(mediaPres)} h por decisão
+      (média dos últimos 3 meses), com ~${fmtInt(volPres)} propostas/mês que poderiam ter o mesmo ganho do Digital.</li>
+  <li><b>Acompanhar a aprovação após a v2.1 (Antifraude).</b> O tempo caiu mais ${fmt1(Math.abs(v21.variacao_tempo_pct))}%,
+      mas a aprovação no Digital variou ${fmt1(v21.variacao_aprov_pp)} p.p.: validar com Risco se são bloqueios corretos de fraude.</li>
+  <li><b>Reservar capacidade de sustentação perto de releases grandes.</b> As sprints em torno da v2.0 concentraram mais bugs
+      (ver faixa no gráfico do Jira). Planejar isso evita atraso no roadmap seguinte.</li>`;
+</script>
+</body>
+</html>

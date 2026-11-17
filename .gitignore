@@ -1,0 +1,18 @@
+# Banco local gerado pelo pipeline (recriado a cada execução)
+data/lakehouse.duckdb
+data/lakehouse.duckdb.wal
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Editores / SO
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Databricks
+.databricks/
